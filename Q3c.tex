@@ -1,0 +1,47 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+% all other packages and stuff you need for the picture
+%
+\begin{document}
+
+{ \centering
+\begin{tikzpicture}[xscale=0.9,yscale=0.9]
+    \begin{axis}[
+        xlabel={$x$},
+        ylabel={$y$}]
+	\addplot [black] coordinates {
+	(0.33,1.33)
+    (0.3,1.2)
+    (0.3,1.8)
+    (0.33,2)
+    (0.33,1.33)};
+    \addplot [black] coordinates {
+    (-0.33,1.33)
+  (-0.3,1.2)
+  (-0.3,1.8)
+  (-0.33,2)
+  (-0.33,1.33)
+    };
+    \addplot [black] coordinates {
+    (0.3,1.8)
+  (-0.3,1.8)
+    };
+    \addplot [black] coordinates {
+    (0.33,2)
+  (-0.33,2)
+    };
+    \addplot [black] coordinates {
+  (0.3,1.2)
+  (-0.3,1.2)
+    };
+    \addplot [black] coordinates {
+    (-0.33,1.33)
+    (0.33,1.33)
+    };
+    \end{axis}
+\end{tikzpicture}
+
+}
+\end{document}
