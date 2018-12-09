@@ -186,6 +186,71 @@ $$
 
 Now, we know that k, P, a, Q\textsubscript{1},Q\textsubscript{2} are constants.
 
+
+In Part B we got the Potential Energy of the system. For Equilibrium, we need to set the Net Force = 0. For this we need the force from the Potential Energy Equation. We partially differentiate the PE equation by both $w_1$ and $w_2$ to get two equations.
+
+$$
+\frac{d\Pi}{dw_1} = \frac{2w_1}{2}\left(k-\frac{2P}{a}\right) + \frac{Pw_2}{a} - Q_1$$
+$$\frac{d\Pi}{dw_2} = \frac{2w_2}{2}\left(k-\frac{2P}{a}\right) + \frac{Pw_1}{a} - Q_2
+$$
+
+Setting $\frac{d\Pi}{dw_1}$ and $\frac{d\Pi}{dw_2}$ zero for Equilibrium Configuration,
+$$w_1\left(k-\frac{2P}{a}\right) + \frac{Pw_2}{a} = Q_1 $$
+$$w_2\left(k-\frac{2P}{a}\right) + \frac{Pw_1}{a} = Q_2 $$
+
+We can write this as a Matrix.
+
+$$
+\begin{bmatrix}
+k-\frac{2P}{a} & \frac{P}{a}\\
+\frac{P}{a} & k-\frac{2P}{a}\\
+\end{bmatrix}\begin{bmatrix}w_1\\ w_2\end{bmatrix} = \begin{bmatrix}Q_1 \\ Q_2\end{bmatrix}
+$$
+
+Which is the same as $\mat{K}_\text{tot} \Vec{w} = \Vec{q}$.
+
+\subsection{Part D}
+
+Putting the given values of $\Vec{\text{q}}$ and P, we get
+
+$$w_1\left(k-\frac{2}{a}\frac{ka}{6}\right) + \frac{ka}{6}\frac{w_2}{a} = \frac{ka}{24} \text{  \hspace{0.6cm},\hspace{0.6cm} } w_2\left(k-\frac{2}{a}\frac{ka}{6}\right) + \frac{ka}{6}\frac{w_1}{a} = \frac{ka}{12} $$
+
+$$w_1 - \frac{w_1}{3} + \frac{w_2}{6} = \frac{a}{24} \text{  \hspace{0.6cm},\hspace{0.6cm} } w_2-\frac{w_2}{3} + \frac{w_1}{6} = \frac{a}{12} $$
+
+
+$$16w_1 + 4w_2 = a \text{  \hspace{0.6cm},\hspace{0.6cm} } 8w_2 + 2w_1 = a $$
+
+$$\text{By solving the two equations we will get } w_1 = \frac{7a}{60} \text{ and } w_2 = \frac{a}{30}$$
+
+\subsection{Part E}
+
+For $\text{P} = \frac{ka}{6}\text{, we get }
+\begin{bmatrix}
+\frac{2k}{3} & \frac{k}{6}\\
+\frac{k}{6} & \frac{2k}{3}
+\end{bmatrix}
+\text{, for which the eigenvalues are } \frac{5k}{6} \text{ and } \frac{k}{2}
+$
+
+For $\text{P} = \frac{2ka}{3}\text{, we get }
+\begin{bmatrix}
+-\frac{k}{3} & \frac{2k}{3}\\
+\frac{2k}{3} & -\frac{k}{3}
+\end{bmatrix}
+\text{, for which the eigenvalues are } -k \text{ and } \frac{k}{3}
+$
+
+For $\text{P} = 2ka\text{, we get }
+\begin{bmatrix}
+-3k & 2k\\
+2k & -3k
+\end{bmatrix}
+\text{, for which the eigenvalues are } -2-3k \text{ and } 2-3k
+$
+
+
+
+
 \section{Question}
 \subsection{Part A}
 % \begin{lstlisting}[language = Octave]
